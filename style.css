@@ -82,7 +82,6 @@ a {
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   text-decoration: none;
-  white-space: nowrap;
   outline: none;
 }
 
@@ -153,6 +152,10 @@ b {
 
 .intro span {
   color: rgb(3, 42, 233);
+}
+.intro span.funny {
+  font-size: 1.2rem;
+  color: #000000a6;
 }
 
 .intro h1 {
@@ -430,7 +433,7 @@ footer ul li a:hover:after {
   background-color: #ffffff;
   box-shadow: 0 0 17px 2px rgba(128, 128, 128, 0.089);
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 100%;
 }
 
 .popUp .popUpImg {
@@ -440,12 +443,6 @@ footer ul li a:hover:after {
   /* height: 70vh; */
   background-position: center;
 }
-
-.popUp div:nth-child(2) {
-  padding: 10vh 2em;
-  position: relative;
-}
-
 .popUp span {
   display: block;
   position: absolute;
@@ -460,37 +457,69 @@ footer ul li a:hover:after {
   cursor: pointer;
   user-select: none;
 }
-
-.popUp div:nth-child(2) h1 {
-  font-size: 2.3em;
-  margin-bottom: 1em;
+#popUpText {
+  margin: 4rem 2em;
 }
 
-.popUp div:nth-child(2) p {
+.popUp div:nth-child(1) h1 {
+  font-size: 3.2rem;
+  margin: 1em 1em 0.5em 1em;
+  text-align: center;
+}
+
+.popUp div:nth-child(1) .projectDesc {
   font-size: 0.9em;
+  text-align: center;
 }
 
-.popUp div:nth-child(2) div {
+.popUp div:nth-child(1) .link {
   display: grid;
-  grid-template-columns: repeat(2, 10%);
+  /* grid-template-columns: repeat(2, 45%); */
+  margin: 1em 1em 0.5em 1em;
+  gap: 4em;
 }
 
-.popUp div:nth-child(2) div a:nth-child(1) {
-  width: 20px;
-  height: 20px;
-  background: url("https://image.flaticon.com/icons/svg/1051/1051377.svg");
+.popUp div:nth-child(1) .link a {
+  width: 3rem;
+  height: 3rem;
+  background: url("/Assets/icons8-figma-48.svg");
   background-size: cover;
   display: block;
+  padding: 1rem;
+  justify-self: center;
 }
 
-.popUp div:nth-child(2) div a:nth-child(2) {
-  width: 20px;
-  height: 20px;
-  background: url("https://image.flaticon.com/icons/svg/1246/1246334.svg");
-  background-size: cover;
-  display: block;
+.popUp div:nth-child(1) .goalsAndOutcomes {
+  display: flex;
+  width: 90%;
+  margin: 0.5rem auto;
 }
-
+.popUp div:nth-child(1) .goalsAndOutcomes {
+  display: flex;
+  flex-flow: row wrap;
+  /* short-hand for direction and wrap */
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.popUp .goalsAndOutcomes > div {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+.popUp .goalsAndOutcomes > div h2 {
+  text-align: center;
+}
+.popUp .goalsAndOutcomes > div ul {
+  margin: 0.5em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.popUp .goalsAndOutcomes > div li {
+  list-style: none;
+  line-height: 2em;
+}
 /****************************/
 
 /* PopUp section ends for DESKTOP VIEW */
