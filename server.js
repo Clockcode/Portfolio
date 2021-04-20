@@ -10,19 +10,19 @@ app.set("port", process.env.PORT || 8080);
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.render("views/index.pug");
+  res.render("index.pug");
 });
 app.get("/my-community", (req, res) => {
-  res.render("views/my-community.pug");
+  res.render("my-community.pug");
 });
 app.get("/journal", (req, res) => {
-  res.render("views/journal.pug");
+  res.render("journal.pug");
 });
 app.get("/lifestraw", (req, res) => {
-  res.render("views/lifestraw.pug");
+  res.render("lifestraw.pug");
 });
 app.get("/notes", (req, res) => {
-  res.render("views/notes.pug");
+  res.render("notes.pug");
 });
 
 app.listen(app.get("port"));
