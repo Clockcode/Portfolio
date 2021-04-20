@@ -8,19 +8,19 @@ app.set("view engine", "pug");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.render("index.pug");
+  res.render("views/index.pug");
 });
 app.get("/my-community", (req, res) => {
-  res.render("my-community.pug");
+  res.render("views/my-community.pug");
 });
 app.get("/journal", (req, res) => {
-  res.render("journal.pug");
+  res.render("views/journal.pug");
 });
 app.get("/lifestraw", (req, res) => {
-  res.render("lifestraw.pug");
+  res.render("views/lifestraw.pug");
 });
 app.get("/notes", (req, res) => {
-  res.render("notes.pug");
+  res.render("views/notes.pug");
 });
 
 const PORT = 8080;
