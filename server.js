@@ -23,7 +23,7 @@ app.get("/notes", (req, res) => {
   res.render("views/notes.pug");
 });
 
-const PORT = 8080;
+const PORT = 8000;
 app.listen(PORT, () => {
   console.log(`App is listening on Port ${PORT}!`);
 });
