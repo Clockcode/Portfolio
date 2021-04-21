@@ -8,13 +8,13 @@ mixin card(project)
               h2.card-title= project.name
               ul.card__links.card-subtitle
               if project.figma_link != "#"
-                li
+                li.list-unstyled
                   a.link(href=`${project.figma_link}` target='_blank') Figma    
               if project.github_link != "#"
-                li
+                li.list-unstyled
                   a.link(href=`${project.github_link}` target='_blank') Github    
               if project.website_link != "#"
-                li
+                li.list-unstyled
                   a.link(href=`${project.website_link}` target='_blank') Website    
             .container-fluid.card-footer.card__desc.d-flex.justify-content-between
               p= project.desc
@@ -50,11 +50,11 @@ main.container-fluid
   .content.row.flex-row.align-items-start.mx-1
     section.intro.col-xs-11.col-sm-9.col-md-4.col-lg-3.m-xs-auto
       .justify-content-start.d-flex.flex-column.mb-10
-        iframe.w-70(src="https://giphy.com/embed/13HgwGsXF0aiGY" frameBorder="0" class="giphy-embed" allowFullScreen)
         h1
           | Hi! &#x1F44B; &mdash; My name is Cagdas 
           | I&apos;m a web developer 👨‍💻 & designer &#x1F468;&zwj;&#x1F3A8;&#xFE0F;
-          | located in Toronto, CA &#x1F341;.
+          | located in Toronto, CA &#x1F341;
+        //- iframe.w-100(src="https://giphy.com/embed/13HgwGsXF0aiGY" frameBorder="0" class="giphy-embed" allowFullScreen).
         ul.list-unstyled.d-flex.flex-column.px-2
           li.my-1.intro__link
             a.p-1(target="_blank" href="www.linkedin.com/in/cagdasm") Linkedin
