@@ -2,23 +2,6 @@ html {
   font-size: 0.7rem;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 0.8rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 0.6rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 0.6rem;
-  }
-}
 .intro {
   position: relative;
   left: -1%;
@@ -26,7 +9,10 @@ html {
 }
 .intro h1 {
   max-width: 512px;
-  font-size: 1.3rem;
+  font-size: 2rem;
+}
+.intro__link {
+  font-size: 1.2rem;
 }
 .card__header {
   position: absolute;
