@@ -39,6 +39,24 @@ const projects = [
     website_link: "#",
     desc: "An icon designed for a freelance project",
   },
+  {
+    name: "Punica",
+    img: "punica",
+    page_link: "punica",
+    github_link: "#",
+    figma_link: "#",
+    website_link: "punica.ca",
+    desc: "Freelance wordpress project for an accountant.",
+  },
+  {
+    name: "Tuber Support",
+    img: "tuber-support",
+    page_link: "tuber-support",
+    github_link: "#",
+    figma_link: "#",
+    website_link: "tubersupport.com",
+    desc: "Freelance wordpress project for a youtuber service team.",
+  },
 ];
 
 const express = require("express");
