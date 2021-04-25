@@ -7,34 +7,41 @@ html {
   left: -1%;
   padding: 64px 0 128px 0;
 }
+
 .intro h1 {
   max-width: 512px;
   font-size: 2rem;
 }
+
 .intro__link {
   font-size: 1.2rem;
 }
+
 .card__header {
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
 .card-title {
   color: #fff;
   font-size: 1.4rem;
 }
+
 .card__links {
   display: flex;
   list-style: none;
   padding: 0;
   font-size: 0.8rem;
 }
+
 .link {
   padding: 0 0.5rem;
   margin: 0 0.5rem;
   color: #fff;
 }
+
 .card__link {
   background-color: #fff;
   border-radius: 4px;
@@ -42,6 +49,7 @@ html {
   display: flex;
   align-items: center;
 }
+
 .card__desc {
   position: absolute;
   bottom: 0;
