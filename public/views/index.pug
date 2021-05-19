@@ -12,10 +12,10 @@ mixin card(project)
                   a.link(href=`${project.figma_link}` target='_blank') Figma    
               if project.github_link != "#"
                 li.list-unstyled
-                  a.link(href=`${project.github_link}` target='_blank') Github    
+                  a.link(href=`https://${project.github_link}` target='_blank') Github    
               if project.website_link != "#"
                 li.list-unstyled
-                  a.link(href=`${project.website_link}` target='_blank') Website    
+                  a.link(href=`https://${project.website_link}` target='_blank') Website    
             .container-fluid.card-footer.card__desc.d-flex.justify-content-between
               p= project.desc
               a.px-2.card__link(href=`${project.page_link}` target='_blank')
@@ -57,9 +57,9 @@ main.container-fluid
         //- iframe.w-100(src="https://giphy.com/embed/13HgwGsXF0aiGY" frameBorder="0" class="giphy-embed" allowFullScreen).
         ul.list-unstyled.d-flex.flex-column.px-2
           li.my-1.intro__link
-            a.p-1(target="_blank" href="www.linkedin.com/in/cagdasm") Linkedin
+            a.p-1(target="_blank" href="https://www.linkedin.com/in/cagdasm") Linkedin
           li.my-1.intro__link
-            a.p-1(target="_blank" href="www.github.com/clockcode") Github
+            a.p-1(target="_blank" href="https://www.github.com/clockcode") Github
           li.my-1.intro__link
             a.p-1(target="_blank" href="https://drive.google.com/file/d/1b4XAptQfOKjkmiOSFWwStqCvH6I3JBNZ/view?usp=sharing") Resume
           li.my-1.intro__link

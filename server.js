@@ -86,4 +86,4 @@ app.get("/notes", (req, res) => {
   res.render("notes.pug");
 });
 
-app.listen(app.get("port"));
+app.listen(app.get("port"), console.log("It's working"));
