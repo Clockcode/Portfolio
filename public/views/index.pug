@@ -46,7 +46,13 @@ head
   script(src='js/index.js')
   //- font awesome 
   script(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet")
+  //- Anime.js
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer")
 main.container-fluid
+  div.loader-container.text-light.text-uppercase(onload="removeLoading()")
+    div.spinner-wrapper
+        div.spinner
+          strong.loading-text.px-md-4.display-5 Loading...
   .content.row.flex-row.align-items-start.mx-1
     section.intro.col-xs-11.col-sm-9.col-md-4.col-lg-3.m-xs-auto
       .justify-content-start.d-flex.flex-column.mb-10
@@ -59,13 +65,14 @@ main.container-fluid
           li.my-1.intro__link
             a.p-1(target="_blank" href="https://www.linkedin.com/in/cagdasm") Linkedin
           li.my-1.intro__link
+            a.p-1(target="_blank" href="https://www.fiverr.com/cagdasmuldur") Fiverr
+          li.my-1.intro__link
             a.p-1(target="_blank" href="https://www.github.com/clockcode") Github
           li.my-1.intro__link
             a.p-1(target="_blank" href="https://drive.google.com/file/d/1b4XAptQfOKjkmiOSFWwStqCvH6I3JBNZ/view?usp=sharing") Resume
           li.my-1.intro__link
             a.p-1(href="mailto:cagdasmuldur@gmail.com?subject=Hiring%20Opportunity") Send Email
     section.projects.col-xs-12.col-sm-10.col-md-7.col-lg-9.m-auto
-      // Project One
       .row.align-items-center.flex-wrap
         each project in projects
             +card(project)
