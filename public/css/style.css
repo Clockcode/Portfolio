@@ -1,6 +1,10 @@
 html {
   font-size: 0.7rem;
 }
+/* Welcome Text style starts */
+.animated-text {
+  display: flex;
+}
 
 .intro {
   position: relative;
