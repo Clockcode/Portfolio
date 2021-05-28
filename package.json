@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon server.js -e js,pug",
     "start": "node server.js",
-    "pug": "pug -w ./views -o ./html",
+    "pug": "pug ./public/views -o ./public/html",
     "dev": " & nodemon -e pug -w ./views ./server.js"
   },
   "repository": {

@@ -57,5 +57,7 @@ $(document).ready(() => {
     );
   } else {
     //Add your javascript for screens smaller than 768 here
+
   }
+  
 });
