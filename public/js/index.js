@@ -25,26 +25,46 @@ $(document).ready(() => {
   });
 
   removeLoading();
-
-  //   timeline created
+  // if hover on selected item
+  // $(".card").hover(() => {
+  //   anime({
+  //     targets: ".card",
+  //     easing: "easeInExpo",
+  //     scale: [1, 1.1],
+  //     elasticity: 100,
+  //     // delay: anime.stagger(400),
+  //     offset: "-=300",
+  //     duration: 1000,
+  //   });
+  // });
+  // //   timeline created
   let t1 = anime.timeline({
     easing: "easeInExpo",
   });
 
   // hi! text gets bigger from the void
-  t1.add({
-    targets: ".animated-letter",
-    scale: [0, 1],
-    elasticity: 200,
-    delay: anime.stagger(400),
-    offset: "-=300",
-    duration: 1500,
-  });
 
   let targetWidth = 768;
 
   if ($(window).width() >= targetWidth) {
     //Add your javascript for screens wider than or equal to 768 here
+
+    t1.add({
+      targets: ".animated-text",
+      translateX: [-150, 35],
+      duration: 1300,
+      scale: [0.2, 1.1],
+      elasticity: 200,
+      // delay: anime.stagger(400),
+    });
+
+    t1.add({
+      targets: ".desc",
+      translateX: [-150, 10],
+      duration: 1000,
+      scale: [0, 1],
+      elasticity: 200,
+    });
 
     // Links are coming from left of the screen.
     t1.add(

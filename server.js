@@ -1,5 +1,6 @@
 const projects = [
   {
+    id: "0",
     name: "My Community",
     img: "my-community",
     page_link: "my-community",
@@ -10,6 +11,7 @@ const projects = [
     desc: "Side project that I am working to bring to life.",
   },
   {
+    id: "1",
     name: "Lifestraw",
     img: "lifestraw",
     page_link: "lifestraw",
@@ -20,6 +22,7 @@ const projects = [
     desc: "Home page redesign of an existing product that I love",
   },
   {
+    id: "2",
     name: "Journal",
     img: "journal-app",
     page_link: "journal-app",
@@ -30,6 +33,7 @@ const projects = [
     desc: "Welcome screen designed for a customer project.",
   },
   {
+    id: "3",
     name: "Notes",
     img: "notes-logo",
     page_link: "notes-app",
@@ -40,6 +44,7 @@ const projects = [
     desc: "An icon designed for a freelance project",
   },
   {
+    id: "4",
     name: "Punica",
     img: "punica",
     page_link: "punica",
@@ -49,6 +54,7 @@ const projects = [
     desc: "Freelance wordpress project for an accountant.",
   },
   {
+    id: "5",
     name: "Tuber Support",
     img: "tuber-support",
     page_link: "tuber-support",

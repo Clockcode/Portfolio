@@ -12,9 +12,11 @@ html {
   padding: 64px 0 128px 0;
 }
 
-.intro h1 {
+.intro .desc,
+.intro .animated-text {
   max-width: 512px;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .intro__link {
@@ -31,6 +33,15 @@ html {
   color: #fff;
   text-decoration: none;
   margin-left: 1rem;
+}
+.grow {
+  transition: all 0.35s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.22);
 }
 
 .card__header {
