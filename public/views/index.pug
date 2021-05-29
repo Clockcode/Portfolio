@@ -1,8 +1,7 @@
-- var projects = []
 //- Mixin
 mixin card(project)
     .col-xs-12.col-sm-12.col-lg-4.d-flex.my-1.p-2
-        .card.m-auto.h-100.box-shadow
+        .card.m-auto.h-100.box-shadow.grow(data-index-number=`card-${project.id}`)
           img.card-img.img-responsive(src=`Assets/${project.img}.jpg`)
           .card-img-overlay
             .card-header.card__header.container-fluid
@@ -55,15 +54,11 @@ main.container-fluid
   .content.row.flex-row.align-items-start.mx-1
     section.intro.col-xs-12.col-sm-12.col-md-4.col-lg-3.m-xs-auto
       .justify-content-start.d-flex.flex-column.mb-10
-        h1
-          span.animated-text 
-            .animated-letter H
-            .animated-letter i
-            .animated-letter ! 
-            .animated-letter &#x1F44B;
-          | My name is Cagdas 
-          | I&apos;m a web developer 👨‍💻 & designer &#x1F468;&zwj;&#x1F3A8;&#xFE0F;
-          | located in Toronto, CA &#x1F341;
+        .about
+          span.animated-text Hi! &#x1F44B;
+          .desc I am Cagdas (Chad) 
+            | I&apos;m a web developer 👨‍💻 & designer &#x1F468;&zwj;&#x1F3A8;&#xFE0F;
+            | located in Toronto, CA &#x1F341;
         //- iframe.w-100(src="https://giphy.com/embed/13HgwGsXF0aiGY" frameBorder="0" class="giphy-embed" allowFullScreen).
         ul.list-unstyled.d-flex.flex-md-column.flex-sm-row
           li.flex-fill.m-1.intro__link
