@@ -18,8 +18,8 @@ mixin card(project)
                   a.link(href=`https://${project.website_link}` target='_blank') Website    
             .container-fluid.card-footer.card__desc.d-flex.justify-content-between
               p= project.desc
-              a.px-2.card__link(href=`${project.page_link}` target='_blank')
-                img(src='/Assets/keyboard-right-arrow-button.svg' alt=' button' height='32px')
+              //- a.px-2.card__link(href=`${project.page_link}` target='_blank')
+              //-   img(src='/Assets/keyboard-right-arrow-button.svg' alt=' button' height='32px')
 
 doctype html
 head
@@ -57,8 +57,9 @@ main.container-fluid
         .about
           span.animated-text Hi! &#x1F44B;
           .desc I am Cagdas (Chad) 
-            | I&apos;m a web developer 👨‍💻 & designer &#x1F468;&zwj;&#x1F3A8;&#xFE0F;
-            | located in Toronto, CA &#x1F341;
+            div Web Developer 👨‍💻
+              div UI/UX Designer &#x1F468;&zwj;&#x1F3A8;&#xFE0F;
+                div Located in Toronto &#x1F341;
         //- iframe.w-100(src="https://giphy.com/embed/13HgwGsXF0aiGY" frameBorder="0" class="giphy-embed" allowFullScreen).
         ul.list-unstyled.d-flex.flex-md-column.flex-sm-row
           li.flex-fill.m-1.intro__link

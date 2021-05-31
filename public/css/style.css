@@ -18,6 +18,9 @@ html {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+.intro .desc {
+  font-weight: 600;
+}
 
 .intro__link {
   font-size: 1.2rem;
@@ -81,7 +84,9 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
